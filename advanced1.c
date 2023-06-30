@@ -42,6 +42,8 @@ int hex_nonPrint(va_list pull)
 			hxd += 2;
 			buffit(92);
 			buffit('x');
+			if (str[i] < 9)
+				hxd += buffit('0');
 			hxd += rec_hexal(str[i], hexS);
 		}
 		else

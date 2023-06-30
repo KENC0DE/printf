@@ -80,8 +80,8 @@ int print_addr(va_list pull)
 		char *str = "(nil)";
 
 		for (i = 0; str[i]; i++)
-			buffit(str[i]);
-		return (6);
+			bytes += buffit(str[i]);
+		return (bytes);
 	}
 
 	buffit('0');

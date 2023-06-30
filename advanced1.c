@@ -39,10 +39,9 @@ int hex_nonPrint(va_list pull)
 	{
 		if (str[i] < 32 || str[i] >= 127)
 		{
-			hxd += 3;
+			hxd += 2;
 			buffit(92);
 			buffit('x');
-			buffit('0');
 			hxd += rec_hexal(str[i], hexS);
 		}
 		else

@@ -18,18 +18,19 @@ int rec_hexal(unsigned int num, char *hex)
 		{
 			unsigned int j, k = 0;
 
+			buffit('0');
 			for (j = 10; j <= 15; j++, k++)
 			{
 				if (num == j)
 					buffit(hex[k]);
 			}
+			return (2);
 		}
 		else
 			buffit('0' + num);
 
 		return (1);
 	}
-
 	rem = num % 16;
 	if (rem > 9)
 	{

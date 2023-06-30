@@ -77,7 +77,7 @@ int print_addr(va_list pull)
 	num = va_arg(pull, unsigned long int);
 	if (num <= 0)
 	{
-		char *str = "(null)";
+		char *str = "(nil)";
 
 		for (i = 0; str[i]; i++)
 			buffit(str[i]);
